@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Noteable | AlchemyAPI Demo</title>
+  <link rel="stylesheet" href="static/css/home.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="http://malsup.github.com/jquery.form.js"></script> 
+</head>
+<body>
+
+<form id="alchemy-text" action="/analyze" method="POST">
+  <div class="logo-wrapper">
+    <img src="static/images/logo-white.png">
+  </div>
+  <h1>AlchemyAPI Taxonomy and Concepts Analysis</h1>
+  <div id="textarea-container">
+    <textarea name="text-analysis" id="textarea" class="slide-down" placeholder="Paste your text here.">
+The Pythagorean Theorem
+
+In a right triangle, the square of the hypotenuse is equal to the sum of
+the squares of the legs.
+
+c²= a²+ b²
+
+Theorem:
+
+If the square of one side of a triangle is equal to the sum of the
+squares of the other sides then the triangle is a right triangle.
+
+Theorem:
+
+If the square of the longest side of a triangle is greater than the sum
+of the squares of the other two sides then the triangle is an obtuse
+triangle.
+
+Theorem:
+
+If the square of the longest side of a triangle is less than the sum of
+the squares of the other two sides then the triangle is an acute
+triangle.
+    </textarea>
+  </div>
+  <div>
+    <div>
+      <button class="entypo-right-thin slide-down" id="button" type="submit">  Run Analysis</button>
+    </div>
+  </div> 
+</div>
+</form>
+
+<div id="response">
+  <div id="taxonomy">
+
+  </div>
+
+  <div id="concepts">
+
+  </div>
+</div>
+
+
+</body>
+</html>
